@@ -1,0 +1,381 @@
+{
+    "0": {
+        "question": [
+            "CDMA (Code Division Multiple Access) is an open standard that is accepted and used worldwide."
+        ],
+        "correct": [
+            "False"
+        ],
+        "ans": {
+            "1": {
+                "1": [
+                    "True."
+                ],
+                "2": [
+                    "False. You selected this answer. This was the correct answer."
+                ],
+                "3": [
+                    "True."
+                ]
+            },
+            "2": {
+                "5": [
+                    "False. You selected this answer. This was the correct answer."
+                ],
+                "6": [
+                    "True."
+                ],
+                "7": [
+                    "SDSL. You selected this answer. This was the correct answer."
+                ]
+            },
+            "3": {
+                "9": [
+                    "ADSL2+."
+                ],
+                "10": [
+                    "VDSL."
+                ],
+                "11": [
+                    "False."
+                ]
+            },
+            "4": {
+                "13": [
+                    "It is the portion of the network from the remote switching facility to the central office.."
+                ],
+                "14": [
+                    "It is the portion of the network between the NIU and the remote switching facility.."
+                ],
+                "15": [
+                    "It is the portion that connects any residence or business to the nearest central office.. You selected this answer. This was the correct answer."
+                ]
+            },
+            "5": {
+                "17": [
+                    "digital subscriber line (DSL)."
+                ],
+                "18": [
+                    "Carrier-Ethernet Transport (CET)."
+                ],
+                "19": [
+                    "T-carrier (T1s, fractional T1s, and T3s)."
+                ]
+            },
+            "6": {
+                "21": [
+                    "You pay only for the bandwidth you require.. You selected this answer. This was the correct answer."
+                ],
+                "22": [
+                    "Frame relay is a newly established network technology with more features than other technology.."
+                ],
+                "23": [
+                    "The paths that your data will take are always known.."
+                ]
+            },
+            "7": {
+                "25": [
+                    "Data is transmitted, and then the path taken will vary depending on the load encountered at each ATM participant node.."
+                ],
+                "26": [
+                    "A frame relay route table establishes each hop that will be taken to a single destination.."
+                ],
+                "27": [
+                    "When data is ready to be transmitted, an ATM participating router will contact the destination ATM router, establish a tunnel, then pass the data.."
+                ]
+            },
+            "8": {
+                "29": [
+                    "4. You selected this answer. This was the correct answer."
+                ],
+                "30": [
+                    "1."
+                ],
+                "31": [
+                    "2."
+                ]
+            },
+            "9": {
+                "33": [
+                    "wavelength division multiplexing (WDM)."
+                ],
+                "34": [
+                    "dense wavelength division multiplexing (DWDM)."
+                ],
+                "35": [
+                    "frequency division multiplexing (FDM)."
+                ]
+            },
+            "10": {
+                "37": [
+                    "44.736 Mbps. You selected this answer. This was the correct answer."
+                ],
+                "38": [
+                    "3.152 Mbps."
+                ],
+                "39": [
+                    "1.544 Mbps."
+                ]
+            },
+            "11": {
+                "41": [
+                    "84 bytes."
+                ],
+                "42": [
+                    "48 bytes."
+                ],
+                "43": [
+                    "64 bytes."
+                ]
+            },
+            "12": {
+                "45": [
+                    "ADSL. You selected this answer. This was the correct answer."
+                ],
+                "46": [
+                    "VDSL."
+                ],
+                "47": [
+                    "G.Lite."
+                ]
+            },
+            "13": {
+                "49": [
+                    "1."
+                ],
+                "50": [
+                    "12."
+                ],
+                "51": [
+                    "64."
+                ]
+            },
+            "14": {
+                "53": [
+                    "24 to 32. You selected this answer. This was the correct answer."
+                ],
+                "54": [
+                    "32 to 48."
+                ],
+                "55": [
+                    "16 to 24."
+                ]
+            },
+            "15": {
+                "57": [
+                    "The transmissions are encrypted, such that only the appropriate device can decrypt its own call.."
+                ],
+                "58": [
+                    "The packets include the end user&#39;s SIM IMEI in each packet.."
+                ],
+                "59": [
+                    "The packets are coded such that individual calls can be distinguished.. You selected this answer. This was the correct answer."
+                ]
+            },
+            "16": {
+                "61": [
+                    "The total number of SIP bearer channels provisioned on the SIP switch.."
+                ],
+                "62": [
+                    "The amount of available bandwidth.. You selected this answer. This was the correct answer."
+                ],
+                "63": [
+                    "The total number of time division slots allocated to the SIP client organization.."
+                ]
+            },
+            "17": {
+                "65": [
+                    "They connect to a wireless station repeater.."
+                ],
+                "66": [
+                    "They connect directly to the central office.."
+                ],
+                "67": [
+                    "They connect to a mobile switching center.. You selected this answer. This was the correct answer."
+                ]
+            },
+            "18": {
+                "69": [
+                    "OC-24."
+                ],
+                "70": [
+                    "OC-3. You selected this answer. This was the correct answer."
+                ],
+                "71": [
+                    "OC-1."
+                ]
+            }
+        }
+    },
+    "1": {
+        "question": [
+            "WANs connect nodes, such as workstations, servers, printers, and other devices, in a small geographical area on a single network."
+        ],
+        "correct": [
+            "False"
+        ],
+        "ans": {}
+    },
+    "2": {
+        "question": [
+            "DSL services require many subscribers to share the same local line, causing potential security concerns."
+        ],
+        "correct": [
+            "False"
+        ],
+        "ans": {}
+    },
+    "3": {
+        "question": [
+            "Which type of DSL technology has equal download and upload speeds maxing out at around 2 Mbps?"
+        ],
+        "correct": [
+            "SDSL"
+        ],
+        "ans": {}
+    },
+    "4": {
+        "question": [
+            "In a public switched telephone network, lines are terminated at the central office."
+        ],
+        "correct": [
+            "True"
+        ],
+        "ans": {}
+    },
+    "5": {
+        "question": [
+            "In a public switched telephone network, what portion of the network is known as the local loop?"
+        ],
+        "correct": [
+            "It is the portion that connects any residence or business to the nearest central office"
+        ],
+        "ans": {}
+    },
+    "6": {
+        "question": [
+            "Which of the following Layer 1 WAN technologies is not normally used as last mile service, but rather traverses multiple ISP networks, connecting these networks to the Internet backbone?"
+        ],
+        "correct": [
+            "SONET (Synchronous Optical Network)"
+        ],
+        "ans": {}
+    },
+    "7": {
+        "question": [
+            "Which of the following is an advantage of leasing a frame relay circuit over leasing a dedicated circuit?"
+        ],
+        "correct": [
+            "You pay only for the bandwidth you require"
+        ],
+        "ans": {}
+    },
+    "8": {
+        "question": [
+            "On an ATM network, how is the path that data will take determined?"
+        ],
+        "correct": [
+            "Switches determine the optimal path between sender and receiver, and then establish the path before transmission"
+        ],
+        "ans": {}
+    },
+    "9": {
+        "question": [
+            "When using DOCSIS 3.0, what is the minimum number of channels that can be used?"
+        ],
+        "correct": [
+            "4"
+        ],
+        "ans": {}
+    },
+    "10": {
+        "question": [
+            "The Global System for Mobile Communications (GSM) utilizes what technology to create timeslots on a channel?"
+        ],
+        "correct": [
+            "time division multiple access (TDMA)"
+        ],
+        "ans": {}
+    },
+    "11": {
+        "question": [
+            "What is the maximum throughput of a DS3 connection?"
+        ],
+        "correct": [
+            "44.736 Mbps"
+        ],
+        "ans": {}
+    },
+    "12": {
+        "question": [
+            "What is the size of an ATM cell, including the header?"
+        ],
+        "correct": [
+            "53 bytes"
+        ],
+        "ans": {}
+    },
+    "13": {
+        "question": [
+            "Of all the DSL standards, which is the most commonly in use today?"
+        ],
+        "correct": [
+            "ADSL"
+        ],
+        "ans": {}
+    },
+    "14": {
+        "question": [
+            "Multiplexing enables a single T1 circuit to carry how many channels?"
+        ],
+        "correct": [
+            "24"
+        ],
+        "ans": {}
+    },
+    "15": {
+        "question": [
+            "How many transponders are contained within a typical satellite?"
+        ],
+        "correct": [
+            "24 to 32"
+        ],
+        "ans": {}
+    },
+    "16": {
+        "question": [
+            "Considering that multiple users occupy the same channel when using CDMA, how are various calls using this technology kept separate?"
+        ],
+        "correct": [
+            "The packets are coded such that individual calls can be distinguished"
+        ],
+        "ans": {}
+    },
+    "17": {
+        "question": [
+            "With a SIP trunk, what is the only limitation on the number of calls that can run at any one time?"
+        ],
+        "correct": [
+            "The amount of available bandwidth"
+        ],
+        "ans": {}
+    },
+    "18": {
+        "question": [
+            "In a cellular network, where does each wireless base station connect to?"
+        ],
+        "correct": [
+            "They connect to a mobile switching center"
+        ],
+        "ans": {}
+    },
+    "19": {
+        "question": [
+            "Which SONET OC level is a popular choice for large businesses, and is equivalent to 100 T1s?"
+        ],
+        "correct": [
+            "OC-3"
+        ],
+        "ans": {}
+    }
+}

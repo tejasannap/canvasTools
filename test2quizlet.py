@@ -1,4 +1,5 @@
 import re
+import json
 
 file = open("quiz.html", "r", encoding="utf8").read().strip()
 
@@ -43,18 +44,55 @@ for q,  (cMatch, qMatch) in enumerate(zip(correctMatch, questionMatch), start=0)
     #   print(x)
     #   answer[x] = answerText.groups()
 
-    group_list = []
-    answer = []
+    # group_list = []
+    # aanswer = []
   
-    for matchNum, match in enumerate(answerMatch, start=1):
-          groups = match.groups()
-          group_list.extend(groups)
+    # for matchNum, match in enumerate(answerMatch, start=1):
+    #       group = match.groups()
+    #       group_list.extend(group)
           
-          if len(group_list) == 4:
-              dictionary = {f"answer_{i+1}": group_list[i] for i in range(4)}
-              answer.append(dictionary)
-              group_list.clear()
+    #       if len(group_list) == 4:
+    #           dictionary = {f"answer_{i+1}": group_list[i] for i in range(4)}
+    #           aanswer.append(dictionary)
+    #           group_list.clear()
+
+    tempanswer = {}
+    answer = {}
+
+    a = 0
+    b = 0
+    tf = False
+
+    for matchNum, match in enumerate(answerMatch, start=1):
+        a = a + 1
+
+        ans = match.groups()
+
+        # if tf: 
+        #     b = b + 1
+
+        # if a == 2
+
+
+        # if "true" in ans.lower():
+        #     print('')
+
+
+
+        if a == 4:
+            b = b + 1
+            a = 0
+            # print(tempanswer)
+            # print()
+            answer[b] = tempanswer
+            tempanswer = {}
+        else:
+            print(match.groups)
+            tempanswer[matchNum] = match.groups()
+        # print(ans)
+
       
+    
         
     first = { 
     "question": ques,
@@ -71,6 +109,7 @@ for q,  (cMatch, qMatch) in enumerate(zip(correctMatch, questionMatch), start=0)
 
 print(questions)
 
+
 # for q in range(len(questions)):
 
 #   print(questions[q])
@@ -78,12 +117,15 @@ print(questions)
 
 
 
-def write_pairs(pairs: dict, location: str):
-    '''Writes question-and-answer pairs to a text file in the Quizlet tab-separated format'''
-    with open(location, 'w', encoding="utf8") as f:
-        for key in pairs.keys():
-            newkey = key.split("&lt;span style=&quot;font-family: times new roman; font-size: 12pt; color: #000000;  &quot;&gt;") 
-            f.write(f"{newkey}\t{pairs[key]}\n")
+# def write_pairs(pairs: str, location: str):
+#     '''Writes question-and-answer pairs to a text file in the Quizlet tab-separated format'''
+#     with open(location, 'w', encoding="utf8") as f:
+#         f.write(pairs)
+
+
+# write_pairs(questions, "output.txt")
 
 
 
+with open("output.txt", "w") as f:
+    json.dump(questions, f, indent = 4)
