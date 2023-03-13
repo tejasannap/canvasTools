@@ -63,34 +63,36 @@ for q,  (cMatch, qMatch) in enumerate(zip(correctMatch, questionMatch), start=0)
     b = 0
     tf = False
 
-    for matchNum, match in enumerate(answerMatch, start=1):
-        a = a + 1
+    for matchNum, match in enumerate(answerMatch, start=0):
 
         ans = match.groups()
-
-        # if tf: 
-        #     b = b + 1
-
-        # if a == 2
+        ans_str = "{ans}".format(ans = ans)
+        ans_str = ans_str.lower()
+        a = a + 1
 
 
-        # if "true" in ans.lower():
-        #     print('')
+        if "true" in ans_str or "false" in ans_str:
+            if a == 3:
+              b = b + 1
+              a = 0
 
+              answer[b] = tempanswer
+              tempanswer = {}
+            else:
+                print(match.groups())
+                tempanswer[a] = ans
 
-
-        if a == 4:
+        elif a == 5:
             b = b + 1
             a = 0
+
             # print(tempanswer)
             # print()
             answer[b] = tempanswer
             tempanswer = {}
         else:
-            print(match.groups)
-            tempanswer[matchNum] = match.groups()
-        # print(ans)
-
+            print(match.groups())
+            tempanswer[a] = ans
       
     
         
@@ -107,7 +109,7 @@ for q,  (cMatch, qMatch) in enumerate(zip(correctMatch, questionMatch), start=0)
 
   
 
-print(questions)
+# print(questions)
 
 
 # for q in range(len(questions)):
