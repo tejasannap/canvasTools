@@ -1,11 +1,16 @@
 import re
 
-with open("quiz.html", "r", encoding="utf8") as file:
+with open("quiz2.html", "r", encoding="utf8") as file:
     file_content = file.read()
 
 # Extract questions
 question_regex = r"\"textarea_question_text\">&lt;span style=&quot;font-family: times new roman; font-size: 12pt; color: #000000;  &quot;&gt;([\s\S]*?)&lt;[^\"]span&gt;<"
+question_regex_alt = r"\"textarea_question_text\">&lt;span style=&quot;font-family: times new roman; font-size: 12pt; color: #000000; &quot;&gt;([\s\S]*?)&lt;[^\"]span&gt;<"
 questions = re.findall(question_regex, file_content)
+
+if questions == []:
+    questions = re.findall(question_regex_alt, file_content)
+
 
 # Extract answers
 answer_regex = r"id=\"answer_[^\"]*\"\n       style=\"\"\n      title=\"([^\"]*).>"
@@ -15,7 +20,7 @@ answers = re.findall(answer_regex, file_content)
 # Extract correct answers
 correct_regex = r"title=\"(.*?)(?:\.*?)(?:. This was the correct answer|. You selected this answer. This was the correct answer.)"
 correct_answers = re.findall(correct_regex, file_content)
-
+ 
 # Create a list of dictionaries, with each dictionary containing a question and its answers
 quiz = []
 tf = False
