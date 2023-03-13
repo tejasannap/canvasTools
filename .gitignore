@@ -134,3 +134,5 @@ dmypy.json
 
 # any text file 
 *.txt
+
+ex placeholder/
