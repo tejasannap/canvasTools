@@ -131,3 +131,6 @@ dmypy.json
 
 # any html file
 *.html
+
+# any text file 
+*.txt
