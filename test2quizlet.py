@@ -22,6 +22,11 @@ tf = False
 minus2 = False 
 x = 0
 
+quiz = []
+tf = False
+minus2 = False 
+x = 0
+
 for question_num, question in enumerate(questions):
 
     q = question_num
@@ -30,20 +35,34 @@ for question_num, question in enumerate(questions):
     if minus2 and not "true" in tempans or not "false" in tempans: 
         q = q - 2
         minus2 = False
+        # print("bad question")
+
 
     # nextans = "{temp}".format(temp = answers[x+4]).lower()
 
     if "true" in tempans or "false" in tempans:
         x = x + 2
         ans = ["True", "False"]
-        print("True/False")
         minus2 = True
 
 
     else: 
         x = x + 4
-        print("Normal Question")
         ans = answers[q * 4:(q + 1) * 4]
+
+        # check if previous question was a true/false question and current question is not
+        if tf and not ("true" in tempans or "false" in tempans):
+            q = q + 0
+            ans = set(answers[q * 6:(q + 1) * 6])
+            ans = sorted(ans)[:4]
+
+        tf = False
+
+    # update tf flag
+    tf = "true" in tempans or "false" in tempans
+    
+    print(q)
+    print()
 
 
 
@@ -64,9 +83,6 @@ for question_num, question in enumerate(questions):
     #     answers_for_question = ["True", "False"]
     #     tf = True
     #     minus2 = True
-    print(question)
-    print(ans)
-    print()
 
     answers_for_question = ans
     correct_answer = correct_answers[question_num]
@@ -90,3 +106,4 @@ def printQuiz():
 
 
 
+printQuiz()
