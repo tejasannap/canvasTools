@@ -1,5 +1,5 @@
 # canvasTools
-Various Canvas Tols
+Various Canvas Tools
 
 
 **Unfinished**
